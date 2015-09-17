@@ -1,0 +1,13 @@
+
+git init
+
+git add git_setup.txt
+
+git commit
+
+git remote add origin <URL>
+
+git status
+
+git push origin master
+
