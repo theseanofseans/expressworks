@@ -35,3 +35,14 @@ Please use process.argv[2] instead of a fixed port number:
  » For help run: expressworks help
 */
 
+// outputs "Hello World!" when somebody goes to /home.
+// port number will be provided to you by expressworks as the first argument of
+
+var express = require('express');
+var app = express();
+var port= process.argv[2];
+app.get('/home', function(req, res) {
+  res.end('Hello World!');
+});
+app.listen(port);
+
